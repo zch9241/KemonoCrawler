@@ -1,5 +1,5 @@
 # KemonoCrawler
-一个针对该网站的下载爬虫（当前只支持下载图片功能，后续完善）
+对相关网站的内容（图片、文件）进行爬取并下载
 
 - 本程序使用'Python@3.10'编写
 - 本程序（KemonoCrawler）仅供学习交流，最初目的达成后请自行删除，请勿用于商业用途
@@ -24,20 +24,9 @@ cmd:
 - 若想在有带宽闲置时提升下载速度，请尝试在此段代码后增加线程：
 ```
 
-thread_1 = threading.Thread(target = DownloadPicOrgin)
-thread_2 = threading.Thread(target = DownloadPicOrgin)
-thread_3 = threading.Thread(target = DownloadPicOrgin)
-thread_4 = threading.Thread(target = bar_, args = (len(all_links),))
-[add]thread_n = threading.Thread(target = DownloadPicOrgin)
-thread_1.start()
-thread_2.start()
-thread_3.start()
-thread_4.start()
-[add]thread_n.start()
-thread_1.join()
-thread_2.join()
-thread_3.join()
-thread_4.join()
-[add]thread_n.join()
+ln 277
+for i in range(5):    #将5改为更大的数字
+    thread = threading.Thread(target = DownloadPicOrgin)
+    threads__.append(thread)
 ```
 
