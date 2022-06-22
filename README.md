@@ -23,8 +23,8 @@ cmd:
 - 输入完整的网址，Enjoy it!
 - 若想在有带宽闲置时提升下载速度，请尝试在此段代码后增加线程：
 ```
+<ln 277>
 
-ln 277
 for i in range(5):    #将5改为更大的数字
     thread = threading.Thread(target = DownloadPicOrgin)
     threads__.append(thread)
