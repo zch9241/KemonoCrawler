@@ -21,10 +21,10 @@ cmd:
 ```
 
 **三、运行程序**
-- 输入完整的网址 `example: https://kemono.party/*/user/*`
+- 输入完整的网址，Enjoy it!
 - 可选下载设置
 ```
-<ln:467>
+<ln:445>
 #----config----
 # mode = 0: 将图片和文件分开下载
 # mode = 1: 将图片和文件打包下载
